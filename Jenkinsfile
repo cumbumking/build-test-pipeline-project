@@ -12,6 +12,13 @@ pipeline{
             mvn install
           """
       }
+    } 
+    stage("test"){ 
+      steps{
+          sh """
+            mvn test
+          """
+      }
     }
   }
 }
