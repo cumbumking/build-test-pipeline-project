@@ -28,12 +28,5 @@ pipeline{
           """
       }
     }
-     stage("deploy"){ 
-      steps{
-          sh """
-            mvn deploy
-          """
-      }
-    }
   }
 }   
